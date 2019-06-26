@@ -13,17 +13,9 @@ if (mensagem.startsWith('!ola')) {
  msg.channel.send({
                     embed: {
                         color: 3447003,
-                        description: "Grupo Discord Pinhal novo\nHarry Potter Wizard Unit\n\"
+                        description: "Grupo Discord Pinhal novo\nHarry Potter Wizard Unit\n"
                     }
                 });
-
-
 }
-
-
-
-
-
 });
-
 client.login(process.env.BOT_TOKEN);
