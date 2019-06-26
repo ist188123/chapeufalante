@@ -13,7 +13,7 @@ if (mensagem.startsWith('!ola')) {
  msg.channel.send({
                     embed: {
                         color: 3447003,
-                        description: "Grupo Pinhal novo\nHarry Potter Wizard Unit\n\"
+                        description: "Grupo Discord Pinhal novo\nHarry Potter Wizard Unit\n\"
                     }
                 });
 
