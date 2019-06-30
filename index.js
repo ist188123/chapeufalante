@@ -39,7 +39,7 @@ if (mensagem.startsWith('\ola')) {
   
  
 
-var mensagem=msg.substring(1)
+var mensagem=mensagem.substring(1)
 
 
 
