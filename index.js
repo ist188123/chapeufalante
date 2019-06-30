@@ -97,10 +97,10 @@ setTimeout(function () {
  msg.channel.send({embed: {
     color: 3447003,
     author: {
-      name: msg.author.username,
+      name: client.author.username,
       icon_url: msg.user.avatarURL
     },
-    title: "This is an embed",
+    title: "ESTUFA",
     url: 'https://discord.js.org/',
     description: "PRONTO PARA COLHER",
     fields: [{
@@ -114,7 +114,7 @@ setTimeout(function () {
     ],
     timestamp: new Date(),
     footer: {
-      icon_url: msg.user.avatarURL,
+      icon_url: client.user.avatarURL,
       text: "Pinhal Novo PN HPWU"
     }
   }
