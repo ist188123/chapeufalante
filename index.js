@@ -73,17 +73,7 @@ var horaatual = add_minutes(date, 0)
       
 //me-----
   
-                  
-setTimeout(function () {
- 
-  msg.channel.send({
-                    embed: {
-                        color: 3447003,
-                        description: "PRONTO PARA COLHER\n"+estufa+"\n"+planta
-                    }
-                });
- 
- }, parseInt(colher)); 
+
  
 //----      
       
