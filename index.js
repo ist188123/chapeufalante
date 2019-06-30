@@ -80,7 +80,12 @@ var horaatual = add_minutes(date, 0)
                             .setTimestamp()
                             .setFooter('Anunciado por : ' + msg.author.username, 'https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png');
                            msg.guild.channels.find("name", "estufas").sendMessage(raidinfomsg);
-                  
+  
+ 
+ 
+
+ 
+ 
 setTimeout(function () {
  /*
   msg.channel.send({
@@ -91,34 +96,23 @@ setTimeout(function () {
                 });
  
 */
+  const estufacolhe = new Discord.RichEmbed()
+                            .setColor('#FF0000')
+                            .setTitle("\@everyone")
+                            .setURL('https://discord.js.org/')
+                            .setAuthor('**PORTO PARA COLHER**', "https://torneiopokemongopinhalnovo.webnode.pt/_files/200000041-f1f70f2ee3/450/greenhouse.png", 'https://discord.js.org')
+                            .setThumbnail("https://torneiopokemongopinhalnovo.webnode.pt/_files/200000041-f1f70f2ee3/450/greenhouse.png")
+                            .addField('Estufa', estufa)
+                            //.addBlankField()
+                            .addField('Planta', "**" + planta + "**", true)
+                            .addField('Colher', "**" + hora  + "**", true)
+                            .setTimestamp()
+                            .setFooter('Anunciado por : ' + msg.author.username, 'https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png');
+                           msg.guild.channels.find("name", "chat").sendMessage(estufacolhe);
+  
  
  
  
- msg.channel.send({embed: {
-    color: 3447003,
-    author: {
-      name: client.author.username,
-      icon_url: msg.user.avatarURL
-    },
-    title: "ESTUFA",
-    url: 'https://discord.js.org/',
-    description: "PRONTO PARA COLHER",
-    fields: [{
-        name: "Estufa",
-        value: estufa
-      },
-      {
-        name: "Planta",
-        value: planta
-      }
-    ],
-    timestamp: new Date(),
-    footer: {
-      icon_url: client.user.avatarURL,
-      text: "Pinhal Novo PN HPWU"
-    }
-  }
-});
  
   }, parseInt(colher)); 
 //----      
