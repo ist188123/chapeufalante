@@ -82,7 +82,7 @@ var horaatual = add_minutes(date, 0)
                            msg.guild.channels.find("name", "estufas").sendMessage(raidinfomsg);
                   
 setTimeout(function () {
- 
+ /*
   msg.channel.send({
                     embed: {
                         color: 3447003,
@@ -90,8 +90,37 @@ setTimeout(function () {
                     }
                 });
  
- }, parseInt(colher)); 
+*/
  
+ 
+ 
+ msg.channel.send({embed: {
+    color: 3447003,
+    author: {
+      name: msg.author.username,
+      icon_url: msg.user.avatarURL
+    },
+    title: "This is an embed",
+    url: 'https://discord.js.org/',
+    description: "PRONTO PARA COLHER",
+    fields: [{
+        name: "Estufa",
+        value: estufa
+      },
+      {
+        name: "Planta",
+        value: planta
+      }
+    ],
+    timestamp: new Date(),
+    footer: {
+      icon_url: msg.user.avatarURL,
+      text: "Pinhal Novo PN HPWU"
+    }
+  }
+});
+ 
+  }, parseInt(colher)); 
 //----      
       
       
