@@ -64,16 +64,33 @@ var horaatual = add_minutes(date, 0)
 
   
  colher=(parseInt(horasplantacao)*60+(parseInt(minutosplantacao)))*60000;
-   msg.channel.send({
-                    embed: {
-                        color: 3447003,
-                        description: "teste\n"+estufa+"\n"+planta
-                    }
-                });
+  
       
 //me-----
-  
-
+    const raidinfomsg = new Discord.RichEmbed()
+                            .setColor('#FF0000')
+                            .setTitle("\@everyone")
+                            .setURL('https://discord.js.org/')
+                            .setAuthor('ESTUFA ', planta, 'https://discord.js.org')
+                            .setThumbnail("https://torneiopokemongopinhalnovo.webnode.pt/_files/200000041-f1f70f2ee3/450/greenhouse.png")
+                            .addField('Estufa', estufa)
+                            //.addBlankField()
+                            .addField('Planta', "**" + planta + "**", true)
+                            .addField('Colher', "**" + hora  + "**", true)
+                            .setTimestamp()
+                            .setFooter('Anunciado por : ' + msg.author.username, 'https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png');
+                           msg.guild.channels.find("name", "estufas").sendMessage(raidinfomsg);
+                  
+setTimeout(function () {
+ 
+  msg.channel.send({
+                    embed: {
+                        color: 3447003,
+                        description: "PRONTO PARA COLHER\n"+estufa+"\n"+planta
+                    }
+                });
+ 
+ }, parseInt(colher)); 
  
 //----      
       
